@@ -2,3 +2,4 @@ arxiv_csv
 .ipynb*
 data-by-year/2016.json
 data-by-year/2017.json
+*.DS_Store
