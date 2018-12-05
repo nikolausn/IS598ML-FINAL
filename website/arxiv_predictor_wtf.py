@@ -432,8 +432,8 @@ def web_root():  # pragma: no cover
         for x in range(5):
             html_all += '''
                             <tr>
-                                <td>'''+str(conv[x][0])+'''</td><td>'''+str(conv[x][2])+'''</td>
-                                <td>'''+str(lstm[x][0])+'''</td><td>'''+str(lstm[x][2])+'''</td>
+                                <td>'''+"{} ({})".format(cat_dict[conv[x][0]],conv[x][0])+'''</td><td>'''+str(conv[x][2])+'''</td>
+                                <td>'''+"{} ({})".format(cat_dict[lstm[x][0]],lstm[x][0])+'''</td><td>'''+str(lstm[x][2])+'''</td>
                             </tr>
                     '''
         html_all+='''
@@ -448,7 +448,7 @@ def web_root():  # pragma: no cover
         for x in range(10):
             html_all += '''
                             <tr>
-                                <td>'''+str(lstm_s[x][0])+'''</td><td>'''+str(lstm_s[x][2])+'''</td>
+                                <td>'''+"{} ({})".format(sub_cat_dict[lstm_s[x][0]],lstm_s[x][0])+'''</td><td>'''+str(lstm_s[x][2])+'''</td>
                             </tr>
                     '''
         html_all+='''
